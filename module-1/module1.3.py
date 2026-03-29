@@ -8,7 +8,7 @@
 # making the countdown with the if/else function
 # counts down the numbers of beer on the wall
 def countdown_bottles(bottles):
-    #the loop
+    #the loop while there is more than 1 bottle
     while bottles > 1:
         #display current number of bottles
         print(f"{bottles} bottles of beer on the wall, {bottles} bottles of beer.")
@@ -19,7 +19,7 @@ def countdown_bottles(bottles):
             print(f"Take one down, pass it around, {bottles} bottle of beer on the wall.\n")
         else:
             print(f"Take one down, pass it around, {bottles} bottles of beer on the wall.\n")
-# ONE BOTTLE LEFT? this is the final verse
+    # ONE BOTTLE LEFT? this is the final verse
     print("1 bottle of beer on the wall, 1 bottle of beer.")
     print("Take one down, pass it around, no more bottles of beer on the wall.\n")
 
