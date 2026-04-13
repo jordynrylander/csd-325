@@ -1,3 +1,10 @@
+# Jordyn Rylander
+# Module 3.2
+# 4/12/2026
+# Modified Cho-Han game with:
+# custom input prompt
+# 12% house fee
+# 2 or 7 bonus (10 mon)
 """Cho-Han, by Al Sweigart al@inventwithpython.com
 The traditional Japanese dice game of even-odd.
 View this code athttps://nostarch.com/big-book-small-python-projects
