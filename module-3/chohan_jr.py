@@ -69,7 +69,7 @@ while True:  # Main game loop.
     total = dice1 + dice2
 
     if total == 2 or total == 7:
-        print('You Rolled'. total, 'and got a 10 mon bonus!')
+        print('You Rolled', total, 'and got a 10 mon bonus!')
         purse = purse + 10
         
 
