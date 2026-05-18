@@ -15,6 +15,7 @@ class Todo(tk.Tk):
         self.tasks_frame = tk.Frame(self.tasks_canvas)
         self.text_frame = tk.Frame(self)
 
+#scrollbar is here
         self.scrollbar = tk.Scrollbar(
             self.tasks_canvas,
             orient="vertical",
@@ -26,7 +27,7 @@ class Todo(tk.Tk):
         self.title("Rylander-ToDo")
         self.geometry("300x400")
 
-        # Menu Bar
+        # Menu Bar is here
         menu_bar = tk.Menu(self)
 
         file_menu = tk.Menu(menu_bar, tearoff=0)
@@ -80,6 +81,7 @@ class Todo(tk.Tk):
     def exit_program(self):
      self.destroy()
 
+#add new task
     def add_task(self, event=None):
         task_text = self.task_create.get(1.0, tk.END).strip()
 
@@ -101,7 +103,8 @@ class Todo(tk.Tk):
             self.tasks.remove(event.widget)
             event.widget.destroy()
             self.recolour_tasks()
-
+            
+# Remove selected task
     def recolour_tasks(self):
         for index, task in enumerate(self.tasks):
             self.set_task_colour(index, task)
